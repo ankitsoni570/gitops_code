@@ -2,10 +2,10 @@ steps:
 
 - name: 'gcr.io/concrete-crow-244606/sonar-scanner:latest'
   args:
-    - '-Dsonar.host.url=http://35.208.215.165:9000'
-    - '-Dsonar.login=853eb32d94a99613ba41174803fa057be4dd8420'
-    - '-Dsonar.projectKey=javademoapp'
-    - '-Dsonar.sources=./src/user/'
+    - '-Dsonar.host.url=http://35.232.7.242:9000'
+    - '-Dsonar.login=d57ef72497c93fb767e425f5a3d8ecfa6e801287'
+    - '-Dsonar.projectKey=gitpos_code'
+    - '-Dsonar.sources=./'
   
 - name: 'gcr.io/cloud-builders/mvn'
   args: ['install', '-Dmaven.test.skip=true']
