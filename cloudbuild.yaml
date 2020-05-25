@@ -2,7 +2,7 @@ steps:
 
 - name: 'gcr.io/concrete-crow-244606/sonar-scanner:latest'
   args:
-    - '-Dsonar.host.url=http://35.232.7.242:9000'
+    - '-Dsonar.host.url=http://35.188.102.8:9000'
     - '-Dsonar.login=d57ef72497c93fb767e425f5a3d8ecfa6e801287'
     - '-Dsonar.projectKey=gitpos_code'
     - '-Dsonar.sources=./'
