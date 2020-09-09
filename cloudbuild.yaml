@@ -1,6 +1,6 @@
 steps:
 
-#- name: 'gcr.io/concrete-crow-244606/sonar-scanner:latest'
+#- name: 'gcr.io/tranquil-wave-286914/sonar-scanner:latest'
 #  args:
 #    - '-Dsonar.host.url=http://35.188.102.8:9000'
 #    - '-Dsonar.login=d57ef72497c93fb767e425f5a3d8ecfa6e801287'
@@ -11,9 +11,9 @@ steps:
   args: ['install', '-Dmaven.test.skip=true']
   
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/concrete-crow-244606/gke-poc:$SHORT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/tranquil-wave-286914/gke-poc:$SHORT_SHA', '.']
 
 #- name: 'gcr.io/cloud-builders/gcloud'
-#  args: ['app', 'deploy', 'app.yaml', '--image-url', 'gcr.io/concrete-crow-244606/gke-poc']
+#  args: ['app', 'deploy', 'app.yaml', '--image-url', 'gcr.io/tranquil-wave-286914/gke-poc']
     
-images: ['gcr.io/concrete-crow-244606/gke-poc:$SHORT_SHA']
+images: ['gcr.io/tranquil-wave-286914/gke-poc:$SHORT_SHA']
